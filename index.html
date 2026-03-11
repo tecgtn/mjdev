@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ | Sistemas & Hardware Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0a0a;
+            --card-bg: #161616;
+            --primary-red: #e63946;
+            --accent-red: #900d0d;
+            /* Verde neón ajustado para resaltar sobre negro */
+            --whatsapp-neon: #39ff14; 
+            --text-main: #f0f0f0;
+            --text-dim: #a0a0a0;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, .code-font {
+            font-family: 'JetBrains Mono', monospace;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+	    height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            border-bottom: 2px solid var(--primary-red);
+            /* Cambia 'url-de-tu-imagen.jpg' por la ruta de tu imagen real */
+            background: linear-gradient(rgba(10, 10, 10, 0.7), rgba(10, 10, 10, 0.9)), 
+                        url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1470') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed; /* Efecto Parallax */
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            margin: 0;
+            color: var(--primary-red);
+            text-shadow: 0 0 15px rgba(230, 57, 70, 0.4);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+	    color: #fff;
+            letter-spacing: 2px;
+	    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para legibilidad */
+            display: inline-block;
+            padding: 5px 10px;
+            z-index: 2;
+        }
+
+        .cta-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary-red);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'JetBrains Mono', monospace;
+            border-radius: 2px;
+            transition: 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.3);
+        }
+
+        /* --- ESTILO SOLICITADO: BOTÓN WHATSAPP NEGRO/NEÓN --- */
+        .cta-button.whatsapp {
+            background: #000000; /* Fondo Negro */
+            border: 2px solid var(--whatsapp-neon); /* Marco Verde Neón */
+            color: var(--whatsapp-neon); /* Texto Verde Neón */
+            box-shadow: 0 0 5px rgba(57, 255, 20, 0.2);
+        }
+
+        .cta-button.whatsapp:hover {
+            background: var(--whatsapp-neon);
+            color: #000000;
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.6);
+        }
+
+        /* --- Resto de estilos --- */
+        .section-title {
+            color: var(--primary-red);
+            border-left: 4px solid var(--primary-red);
+            padding-left: 15px;
+            margin-top: 50px;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .event {
+            background: var(--card-bg);
+            border: 1px solid #333;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .event:hover {
+            border-color: var(--primary-red);
+            transform: translateX(10px);
+        }
+
+        .date {
+            color: var(--primary-red);
+            font-weight: bold;
+            font-family: 'JetBrains Mono';
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: #111;
+            padding: 20px;
+            border-top: 3px solid var(--accent-red);
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--accent-red);
+            color: white;
+            padding: 2px 8px;
+            font-size: 0.8rem;
+            margin: 3px;
+            border-radius: 2px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 0;
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <p class="code-font" style="color: var(--primary-red);">>Sistemas Computacionales</p>
+        <h1 class="hero-title">MJ.DEV</h1>
+        <p class="hero-subtitle">Hardware Specialist | Developer | Tech Innovator Since 2009</p>
+        <div class="cta-container">
+            <a href="proy.html" class="cta-button">VER PROYECTOS</a>
+            <a href="https://wa.me/+525535235535" target="_blank" class="cta-button whatsapp">CONTACTO WHATSAPP</a>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <section id="trayectoria">
+        <h2 class="section-title">Trayectoria & Evolución</h2>
+        <div class="timeline">
+            <div class="event">
+                <span class="date">2009 - Inicio</span>
+                <h3>Hardware Recovery Specialist</h3>
+                <p>Especialización en diagnóstico de hardware. Restauración de equipos compactos (HP Slimline), sentando las bases de una carrera basada en la resolución de problemas reales.</p>
+            </div>
+            <div class="event" style="border-left: 4px solid var(--primary-red);">
+                <span class="date">2026 - Actualidad</span>
+                <h3>Ingeniería en Sistemas Computacionales</h3>
+                <p>Fase final de formación profesional. Especialización en desarrollo de aplicaciones y arquitectura de software.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <h2 class="section-title">Stack Tecnológico</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Hardware</h3>
+                <span class="badge">Diagnóstico PC/Laptop</span>
+                <span class="badge">SFF Specialist</span>
+                <span class="badge">Mantenimiento</span>
+            </div>
+
+            <div class="skill-card">
+               <h3>Software & Dev</h3>
+                <span class="badge">C# / .NET</span>
+                <span class="badge">Android Studio</span>
+                <span class="badge">SQL Server</span>
+            </div>
+
+            <div class="skill-card">
+                <h3>Diseño Técnico</h3>
+                <span class="badge">AutoCAD</span>
+                <span class="badge">Wacom Design</span>
+                <span class="badge">UI/UX Móvil</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2009-2026 Generado para una trayectoria de excelencia.</p>
+    </div>
+</footer>
+
+</body>
+</html>
