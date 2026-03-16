@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tecgtn.github.io/mjdev/sitemap.xml
